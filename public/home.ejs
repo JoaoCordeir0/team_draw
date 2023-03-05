@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorteio de equipes</title>
+    <meta name="description" content="App em NodeJS para sorteio de equipes">
+    <link rel="shortcut icon" href="img/icon.png">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <!-- Socket -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js"></script>
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+    <!-- Custom styles for this example -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Nav -->
+    <nav class="container-fluid">
+        <ul>
+            <li><a href="./" class="contrast"><strong>Sorteio de equipes</strong></a></li>
+        </ul>
+    </nav>
+    <!-- ./ Nav -->
+
+    <!-- Main -->
+    <main class="container">
+        <article class="grid">
+            <div class="insertPlayer">
+                <h2>Adicione os jogadores</h2>
+                <form id="formAddPlayer">
+                    <input type="text" id="name_player" maxlength="15" placeholder="Informe o nome do jogador" aria-invalid="true" required>
+                    <button type="submit" class="contrast">Adicionar </button>
+                </form>
+            </div>
+            <div class="listPlayers">
+                <h4 aria-busy="true">Aguardando jogadores...</h4>
+            </div>
+        </article>
+    </main>
+    <!-- ./ Main -->
+
+    <!-- Socekt Controller -->
+    <script src="js/controller.js"></script>
+
+    <!-- Swetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>
