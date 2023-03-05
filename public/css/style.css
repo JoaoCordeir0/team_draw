@@ -73,6 +73,18 @@ article div:nth-of-type(2) {
     }
 }
 
+[data-theme="light"] .listPlayers h4 {
+    color: white;
+}
+
+[data-theme="light"] .listPlayers ul li {
+    color: white;
+}
+
+[data-theme="light"] .listPlayers ul p {
+    color: white;
+}
+
 .insertPlayer {
     margin: auto;
     width: 100%;

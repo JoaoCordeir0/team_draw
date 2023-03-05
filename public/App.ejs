@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -30,6 +30,18 @@
     <nav class="container-fluid">
         <ul>
             <li><a href="./" class="contrast"><strong>Sorteio de equipes</strong></a></li>
+        </ul>
+        <ul>
+            <li>
+                <details role="list" dir="rtl">
+                    <summary aria-haspopup="listbox" role="link" class="secondary">Theme</summary>
+                    <ul role="listbox">
+                        <li><a href="#" data-theme-switcher="auto">Auto</a></li>
+                        <li><a href="#" data-theme-switcher="light">Light</a></li>
+                        <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+                    </ul>
+                </details>
+            </li>
         </ul>
     </nav>
     <!-- ./ Nav -->
@@ -95,6 +107,10 @@
 
     <!-- Modal Pico-->
     <script src="https://picocss.com/examples/js/modal.js"></script>
+
+    <!-- Theme JS Pico.css -->
+    <script src="https://picocss.com/examples/js/minimal-theme-switcher.js"></script>
+
 
 </body>
 
