@@ -92,11 +92,6 @@ article div:nth-of-type(2) {
     list-style-type: none;
     display: inline-block;
     padding: 10px;
-    width: 150px;
-}
-
-.swal2-container {
-    width: 450px !important;
 }
 
 #iconPlayer {
@@ -107,6 +102,10 @@ article div:nth-of-type(2) {
     margin-bottom: 2px;
 }
 
+.swal2-container {
+    width: 450px !important;
+}
+
 .page404 {
     max-width: 600px;
     text-align: center;
@@ -115,4 +114,45 @@ article div:nth-of-type(2) {
 .fa-frown {
     font-size: 80pt;
     margin-bottom: 20px;
+}
+
+.page404 article div p {
+    margin-top: -50px;
+    margin-bottom: 30px;
+}
+
+#modal-initSortition article {
+    padding: 50px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#modal-initSortition article select {
+    margin-bottom: -10px;
+}
+
+#modal-initSortition article footer {
+    display: flex;
+}
+
+.resultSortition {
+    display: flex;
+    padding: 0px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+@media (max-width: 992px) {
+    .resultSortition {
+        overflow-x: scroll;
+    }
+}
+
+.resultSortition ul {
+    margin-right: 20px;
+    min-width: 100px;
+}
+
+.resultSortition ul li {
+    list-style-type: none;
 }

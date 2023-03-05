@@ -19,7 +19,7 @@ app.set('view engine', 'ejs');
 
 // routes 
 app.get('/', (req, res) => {
-    res.render('home.ejs');
+    res.render('App.ejs');
 });
 app.get(/.*/, (req, res) => {
     res.render('404.ejs');

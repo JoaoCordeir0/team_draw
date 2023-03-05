@@ -41,13 +41,49 @@
                 <h2>Adicione os jogadores</h2>
                 <form id="formAddPlayer">
                     <input type="text" id="name_player" maxlength="15" placeholder="Informe o nome do jogador" aria-invalid="true" required>
-                    <button type="submit" class="contrast">Adicionar </button>
+                    <button type="submit" class="contrast">Adicionar</button>
                 </form>
+                <!-- Button to trigger the modal -->
+                <button data-target="modal-initSortition" id="btnSortition" onClick="toggleModal(event)" style="display:none;">Sortear</button>
             </div>
             <div class="listPlayers">
                 <h4 aria-busy="true">Aguardando jogadores...</h4>
             </div>
         </article>
+        <br>
+        <article class="grid" id="resultSortition" style="display:none;">
+            <div>
+                <h2>Resultado do sorteio</h2>
+                <div class="resultSortition">
+                </div>
+            </div>
+        </article>
+
+        <!-- Modal -->
+        <dialog id="modal-initSortition">
+            <article>
+                <h3>Quantos jogadores por equipe?</h3>
+                <select id="qtdPerTeam" required>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                <footer>
+                    <button role="button" class="secondary" data-target="modal-initSortition" onclick="toggleModal(event)">Cancelar</button>
+                    <button role="button" data-target="modal-initSortition" id="initSortition" onclick="toggleModal(event)">Sortear</button>
+                </footer>
+            </article>
+        </dialog>
+
     </main>
     <!-- ./ Main -->
 
@@ -56,6 +92,9 @@
 
     <!-- Swetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Modal Pico-->
+    <script src="https://picocss.com/examples/js/modal.js"></script>
 
 </body>
 
