@@ -93,9 +93,8 @@ io.on('connection', socket => {
         }
     })
 
-    // Limpa os jogadores utilizado pelo usuário do array quando o usuário se desconectar
+    // Detela todos os jogadores que o usuário utilizou quando ele se desconectar do App
     socket.on("disconnect", () => {
-        // Detela todos os jogadores que o usuário utilizou quando ele se desconectar do App
         [...players].forEach(item => {
             players = players.filter(sckt => sckt.socket_id !== socket.id);
         });
