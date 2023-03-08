@@ -73,6 +73,13 @@ article div:nth-of-type(2) {
     }
 }
 
+
+/* Footer */
+
+body>footer {
+    padding: 1rem 0;
+}
+
 [data-theme="light"] .listPlayers h4 {
     color: white;
 }
